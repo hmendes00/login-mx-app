@@ -60,7 +60,7 @@ export const ToguroUserService = {
       const result = await getClient().login('m.login.password', {
         user: username,
         password,
-        device_id: getDeviceId()
+        device_id: getDeviceId() || undefined
       });
       if (!result) {
         return;

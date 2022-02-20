@@ -1,3 +1,5 @@
 {
-    "your-app": "Seu app aqui"
+  "error.cannot-login-error": "email ou senha invalidos",
+  "welcome-back-login": "Bem vindo de volta! Entre na sua conta para ver as ultimas notificacoes:",
+  "welcome-message-login": "Cadastre-se ou Entre na sua conta."
 }

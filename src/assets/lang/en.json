@@ -1,3 +1,5 @@
 {
-  "error.cannot-login-error": "Login or password invalid"
+  "error.cannot-login-error": "Login or password invalid",
+  "welcome-back-login": "Welcome back! Log in to your account to view your latest notifications:",
+  "welcome-message-login": "Sign up or Log in to your account."
 }

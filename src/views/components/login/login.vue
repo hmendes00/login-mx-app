@@ -16,7 +16,8 @@
     </div>
     <div class="log-in-area" autocomplete="off">
       <h4>We are <span>CACHED-IN</span></h4>
-      <p class="login-welcome-message">Welcome back! Log in to your account to view your latest notifications:</p>
+      <p class="login-welcome-message" v-if="hasDeviceCached">{{ $t('welcome-back-login') }}</p>
+      <p class="login-welcome-message" v-else>{{ $t('welcome-message-login') }}</p>
       <span class="error-message">{{ cannotLogin ? $t('error.cannot-login-error') : '' }}</span>
       <div class="floating-label">
         <input v-model="email" placeholder="Email" type="text" name="email" id="email" autocomplete="off" />
@@ -48,12 +49,14 @@
   import loginCss from './login.scss';
   import { useLang } from '@/services/lang-service';
   import { ToguroUserService } from '@/services/user-service';
+  import { getDeviceId } from '@/helpers/matrix-helper';
 
   const root = ref<HTMLDivElement>();
   const email = ref('');
   const password = ref('');
   const cannotLogin = ref(false);
   const { $t } = useLang();
+  const hasDeviceCached = getDeviceId();
 
   const signUp = async () => {
     console.log('TODO::');
