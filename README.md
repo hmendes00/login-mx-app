@@ -1,6 +1,6 @@
 # Login MX App
 
-Login with Matrix / Synapse using this Vue Custom Element (Vue WebCompoment)
+Login with Matrix / Synapse using this Vue Custom Element (Vue WebCompoment) built using [toguro-cli](https://github.com/hmendes00/toguro-cli)
 
 ## Requirements
 
