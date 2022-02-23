@@ -13,6 +13,6 @@ appRegister(ToguroVueComponent);
 
 getCachedAccessToken().then((value) => {
   if (value) {
-    window.dispatchEvent(LoginUpdateEvent(value, `${location.hash.replace('#', '')}`));
+    window.dispatchEvent(LoginUpdateEvent(value, `${location.pathname}`));
   }
 });
