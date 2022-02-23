@@ -3,6 +3,7 @@ import { defineCustomElement } from 'vue';
 import appRegister from './app-register';
 import Toguro from './Toguro.ce.vue';
 import { LoginUpdateEvent } from './helpers/app-events';
+import '@helpers/global-shared-libs';
 
 // If you change this line, your app might not be registered properly
 const ToguroVueComponent = defineCustomElement(Toguro);
@@ -12,6 +13,6 @@ appRegister(ToguroVueComponent);
 
 getCachedAccessToken().then((value) => {
   if (value) {
-    window.dispatchEvent(LoginUpdateEvent(value));
+    window.dispatchEvent(LoginUpdateEvent(value, `${location.hash.replace('#', '')}`));
   }
 });

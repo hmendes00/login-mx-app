@@ -6,5 +6,7 @@ export const ConfigService = {
   mxHasPickleKey: 'mx_has_pickle_key',
   mxHasMxToken: 'mx_has_access_token',
   mxAccountData: 'mx-account-data',
-  loginRedirectPath: '/'
+  loginRedirectPath: '/',
+  defaultAvatar: '/default-avatar.jpeg',
+  MatrixUrl: import.meta.env.VITE_MATRIX_URL
 };
