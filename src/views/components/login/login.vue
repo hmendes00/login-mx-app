@@ -15,7 +15,7 @@
       </svg>
     </div>
     <div class="log-in-area" autocomplete="off">
-      <h4>We are <span>CACHED-IN</span></h4>
+      <h4>We are <span>My Website</span></h4>
       <p class="login-welcome-message" v-if="hasDeviceCached">{{ $t('welcome-back-login') }}</p>
       <p class="login-welcome-message" v-else>{{ $t('welcome-message-login') }}</p>
       <span class="error-message">{{ cannotLogin ? $t('error.cannot-login-error') : '' }}</span>
