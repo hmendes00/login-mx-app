@@ -35,7 +35,7 @@
         <label for="password">Password:</label>
       </div>
       <div class="action-items">
-        <a class="discrete" @click="signUp">Sign up</a>
+        <a class="discrete disabled" @click="signUp">Sign up is disabled</a>
         <span>|</span>
         <button @click="login">Log in</button>
       </div>

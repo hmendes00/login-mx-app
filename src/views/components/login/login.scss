@@ -75,6 +75,9 @@
       &:hover {
         border-bottom: solid 1px rgba(#000, 0.2);
       }
+      &.disabled {
+        cursor: normal;
+      }
     }
     span {
       color: rgba(#000, 0.4);
